@@ -3,16 +3,24 @@
     <head>
         <title>Hello jQuery</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="script.js"></script>
+       
     </head>
 
     <body>
+    <!-- <form> -->
+    	<div>
+    		<label>GitHub Username: </label>
+    		<input type="text" name="username" id="username">
+    		<button onclick="getInput()">Submit</button>
+    	</div>
+    <!-- </form> -->
         <div>
-            <p class="greeting-name">Name: </p>
+            <p class="greeting-name">Name: <span></span> </p>
             <p class="greeting-content"></p><br> 
-            <p class="something">Number of repos: </p>
-            <p class="created">Account created at: </p>
-            <p class="updated">Account last updated at: </p>
+            <p class="something">Number of public repos: <span></span> </p>
+            <p class="created">Account created at: <span></span> </p>
+            <p class="updated">Account last updated at: <span></span> </p>
         </div>
+         <script src="script.js"></script>
     </body>
 </html>
