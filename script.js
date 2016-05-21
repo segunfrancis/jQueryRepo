@@ -1,8 +1,6 @@
-// $(document).ready(function() {
 	function getInput() {
 
 		var input = $("#username").val();
-		// console.log(input);
 	 $.ajax({url: "https://api.github.com/users/"+input})
 	 .then(function(data) {
 	       $('.greeting-name > span').html(data.name);
@@ -12,5 +10,3 @@
 	       $('.updated > span').html(data.updated_at);
 	    });
 	}
-   
-// });
